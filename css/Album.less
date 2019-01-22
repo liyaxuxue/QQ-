@@ -96,8 +96,7 @@
         background:-moz-linear-gradient(#f3f3f3,#fff);
 
         background:linear-gradient(#f3f3f3,#fff);
-        // background: #f3f3f3;
-        // overflow: hidden;
+        
         border: #fff solid 1px;
         position: relative;
         .liupai-box{
@@ -115,11 +114,19 @@
             display: none;
             i{
                 cursor: pointer;
-                font-size: 19px;
+                font-size: 20px;
                 color: #999;
                 margin-left: 4px;
-               
+                height: 20px;
+                width: 20px;
+                border-radius: 50%;
+                display: inline-block;
+              
             }
+            // i:hover{
+            
+            //   background-color: #aaa;
+            // }
         }
         .leibie-box{
             text-align: center;
@@ -338,36 +345,32 @@
                 opacity: 1;
             }
         }
-        .midde-bom{
-            // clear: both;
-            text-align: center;
-            margin-bottom: 60px;
-            strong{
-                height: 50px;
-                width: 50px;
-                text-align: center;
-                line-height: 50px;
-                cursor: pointer;
-               
-            }
-           a{
-               width: 50px;
-               height: 50px;
-               text-align: center;
-              
-               display: inline-block;
-               line-height: 50px;
-           }
         
-
-           a:hover{
-            background-color: #31c27c;
-            color: #fff;
-           }
-        
-        }
     }
 
+    .as{
+        
+        display: flex;
+        justify-content: center;
+        margin-bottom: 60px;
+        
+       a{
+           width: 50px;
+           height: 50px;
+           text-align: center;
+           float: left;
+           line-height: 50px;
+       }
+       a:nth-child(1){
+           display: none;
+       }
+
+       a:hover{
+        background-color: #31c27c;
+        color: #fff;
+       }
+    
+    }
 }
 
 
@@ -501,6 +504,42 @@
         p{
             color: #7f7f7f;
             margin-top: 15px;
+        }
+    }
+}
+
+.goTop{
+    .top1 , .top2 , .top3{
+        height: 40px;
+        width: 40px;
+        position: fixed;
+        bottom: 34px;
+        right: 30px;
+        border: 1px solid #ccc;
+        line-height: 40px;
+        text-align: center;
+      
+    }
+    .top1{
+        line-height: 40px;
+        img{
+            width: 20px;
+            height: 20px; 
+            vertical-align:0;
+            margin-top: 10px;
+        }
+    }
+    .top2{
+        bottom: 80px;
+    }
+    .top3{
+        bottom: 126px;
+        display: none;
+        img{
+            width: 20px;
+            height: 20px; 
+            vertical-align:0;
+            margin-top: 10px;
         }
     }
 }
