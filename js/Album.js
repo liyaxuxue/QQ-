@@ -10,7 +10,7 @@ $('#diqu a').click(function(){
     .siblings()
     .css('display', 'none');
 
-    $('.liupai-box').css('display','none');
+   
 
 
 
@@ -22,7 +22,7 @@ $('.liupai a').click(function(){
 
   $('.liupai-box').css('display','block');
 
-  $('.leibie-box').css('left','180px');
+  $('.leibie-box').css('left','108px');
 
  var v = $(this).html();
  $('.liupai-box span').html(v);
@@ -43,7 +43,7 @@ $('.liupai-box').mouseout(function(){
 //删除流派
 $('.del').click(function(){
   $('.liupai-box').css('display','none');
-  $('.leibie-box').css('left','74px');
+  $('.leibie-box').css('left','0px');
   $('.liupai a').eq(0).addClass('bg').css('color','#fff').siblings().removeClass('bg').css('color','');
 });
 
